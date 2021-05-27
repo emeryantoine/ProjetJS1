@@ -1,5 +1,195 @@
-#FF80AC
+/*
+Colors chart
+
+#FF80AC => main color
 #E874C7
 #F98CFF
 #CB74E8
-#CB8CFF
+#CB8
+
+ */
+
+/* Mise en forme des cards du testimonial */
+
+.padding {
+    padding: 5rem;
+}
+
+
+.card .card-body {
+    padding: 1rem 1rem;
+}
+
+
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+p {
+    font-size: 0.875rem;
+    margin-bottom: .5rem;
+    line-height: 1.5rem;
+}
+
+h4 {
+    line-height: .2;
+}
+
+.profile {
+    margin-top: 16px;
+    margin-left: 20%;
+}
+
+.profile-pic {
+    width: 58px;
+}
+
+.cust-name {
+    font-size: 18px;
+}
+
+.items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+/* Mise en forme du testimonial */
+
+/* Modification des controleurs du carousel */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-color: rgba(0,0, 0, 0.2);
+    background-size: 80%, 80%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.carousel-control-prev-icon{
+    margin-right:85%;
+    margin-bottom:85%;
+}
+
+.carousel-control-next-icon{
+    margin-left:85%;
+    margin-bottom:85%;
+}
+
+.card-text{
+    height: 50px;
+}
+
+.boxShadow{
+    box-shadow: 0 12px 15px 0 rgba(225,128, 172, 0.8);
+}
+
+/* Ajustements mediasQueries */
+
+@media screen and (max-width: 768px){
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 45px;
+        width: 45px;      
+        background-size: 80%, 80%;      
+    }    
+        
+    .carousel-control-prev-icon{
+        margin-right:45%;
+        margin-bottom:10%;
+    }
+    
+    .carousel-control-next-icon{
+        margin-left:45%;
+        margin-bottom:10%;
+    }
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    
+    .card-title{
+        height: 55px;
+    }
+
+    .card-text{
+        height: 75px;
+    }
+
+    .carousel .card-text{
+        height: 90px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 45px;
+        width: 45px;      
+        background-size: 80%, 80%;      
+    }
+    
+    .carousel-control-prev-icon{
+        margin-right:50%;
+        margin-bottom:200%;
+    }
+    
+    .carousel-control-next-icon{
+        margin-left:50%;
+        margin-bottom:200%;
+    }
+    
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+    .card-title{
+        height: 60px;
+    }
+
+    .carousel .card-text{
+        height: 80px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 60px;
+        width: 60px;      
+        background-size: 80%, 80%;      
+    }
+
+    .carousel-control-prev-icon{
+        margin-right:50%;
+        margin-bottom:100%;
+    }
+    
+    .carousel-control-next-icon{
+        margin-left:50%;
+        margin-bottom:100%;
+    }    
+    
+}
+
+
+@media screen and (min-width: 1200x) and (max-width: 1400px){
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 100px;
+        width: 100px;    
+        background-size: 80%, 80%;   
+    }
+
+    .carousel-control-prev-icon{
+        margin-right:45%;
+        margin-bottom:115%;
+    }
+    
+    .carousel-control-next-icon{
+        margin-left:45%;
+        margin-bottom:115%;
+    }
+    
+}
+
+/* Fin ajustements medias Queries */
