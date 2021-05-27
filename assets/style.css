@@ -3,3 +3,63 @@
 #F98CFF
 #CB74E8
 #CB8CFF
+
+body {
+    padding-top: 50px;
+}
+
+h1{
+    color: black;
+}
+
+/* NAVBAR ===================================================*/
+.navbar {
+  
+    background-color: #FF80AC;
+  
+}
+.nav-item {
+    font-family: 'Quando', serif;
+    font-size: larger;
+}
+
+.navbar {
+    padding-top: 0;
+    box-shadow: 0 2px 5px 0 rgba(218, 195, 195, 0.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.nav-item:hover::after{
+  width: 100%;
+  transition: width .3s; 
+}
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: ;
+  transition: width .3s;
+}
+
+
+/* body ==================================== */
+
+.color1{
+    color: #FF80AC;
+}
+
+.color2{
+    color: #E874C7;
+}
+
+.color3{
+    color:#F98CFF;
+}
+
+.color4{
+    color:#CB74E8;
+}
+
+.color5{
+    color: #CB8CFF;
+}
