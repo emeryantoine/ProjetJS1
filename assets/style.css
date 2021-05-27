@@ -7,9 +7,16 @@
 */
 
 
+
 /* GENERAL ===================================================*/
 h1{
     color: black;
+}
+
+body{
+    background: rgb(255,177,204);
+    background: radial-gradient(circle, rgba(255,177,204,1) 0%, rgba(255,236,243,1) 100%);
+    background-attachment: fixed;
 }
 
 /* NAVBAR ===================================================*/
