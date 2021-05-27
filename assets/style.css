@@ -13,6 +13,10 @@ h1{
     color: black;
 }
 
+.top-pad{
+    padding-top: 74px;
+}
+
 body{
     background: rgb(255,177,204);
     background: radial-gradient(circle, rgba(255,177,204,1) 0%, rgba(255,236,243,1) 100%);
@@ -53,8 +57,14 @@ body{
   transition: width .3s;
 }
 
-.top-pad{
-    padding-top: 80px;
+/* Banner ==================================== */
+
+.bannerNoBorder{
+    padding-top: 74px;
+}
+
+.bannerImg{
+    width: 100%;
 }
 
 /* footer ==================================== */
