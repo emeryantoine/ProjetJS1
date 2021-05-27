@@ -1,5 +1,93 @@
+/*
 #FF80AC
 #E874C7
 #F98CFF
 #CB74E8
 #CB8CFF
+*/
+
+
+/* GENERAL ===================================================*/
+h1{
+    color: black;
+}
+
+/* NAVBAR ===================================================*/
+.navbar {
+  
+    background-color: #FF80AC;
+  
+}
+.nav-item {
+    font-family: 'Quando', serif;
+    font-size: larger;
+}
+
+.nav-title {
+    font-family: 'Quando', serif;
+    font-size: 3em;
+}
+
+.navbar {
+    padding-top: 0;
+    box-shadow: 0 2px 5px 0 rgba(218, 195, 195, 0.16),0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.nav-item:hover::after{
+  width: 100%;
+  transition: width .3s; 
+}
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 5px;
+  background: white;
+  transition: width .3s;
+}
+
+.top-pad{
+    padding-top: 80px;
+}
+
+/* footer ==================================== */
+
+footer{
+    background-color: #FF80AC;
+    color: black;
+    font-family: 'Quando', serif;
+}
+
+#socialLinkNoDash a, #footerItemNoDash p a, .noDecorationLink{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-item:hover::after{
+    width: 100%;
+    transition: width .3s; 
+  }
+.footer-item::after {
+content: '';
+display: block;
+width: 0;
+height: 5px;
+background: white;
+transition: width .3s;
+}
+
+.topNbottom{
+    background-color: rgba(0, 0, 0, 0.05);;
+}
+
+
+
+/* colors ==================================== */
+
+.color1{
+    color: #FF80AC;
+}
+
+.color1-bg{
+    background-color: #FF80AC;
+}
