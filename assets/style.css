@@ -14,13 +14,68 @@ h1{
 }
 
 .top-pad{
-    padding-top: 74px;
+    padding-top: 20px;
 }
 
 body{
     background: rgb(255,177,204);
     background: radial-gradient(circle, rgba(255,177,204,1) 0%, rgba(255,236,243,1) 100%);
     background-attachment: fixed;
+}
+
+h2 span{
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    background: linear-gradient(180deg, rgba(255,128,172,1) 0%, rgba(153,11,60,1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 5px double;
+    border-radius: 10px;
+    border-color: #cd0047;
+}
+
+.hr-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-section hr{
+    flex: 1;
+    border: none;
+    height: 2px;
+    background: #cd0047;
+    opacity: 1.0;
+}
+
+.hr-plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.hr-plus hr{
+    flex: 1;
+    border: none;
+    height: 1px;
+    background: #cd0047;
+}
+
+.showMore{
+    border: 1px solid #cd0047;
+    color: #cd0047;
+    opacity: .5;
+    background-color: #FFD9E6;
+}
+
+.createCustom{
+    border: 1px solid #cd0047;
+    color: #cd0047;
+    opacity: .5;
+    background-color: #FFD9E6;
+    font-weight: bold;
 }
 
 /* NAVBAR ===================================================*/
