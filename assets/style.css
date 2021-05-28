@@ -13,6 +13,10 @@ h1{
     color: black;
 }
 
+.top-pad{
+    padding-top: 74px;
+}
+
 body{
     background: rgb(255,177,204);
     background: radial-gradient(circle, rgba(255,177,204,1) 0%, rgba(255,236,243,1) 100%);
@@ -53,8 +57,35 @@ body{
   transition: width .3s;
 }
 
-.top-pad{
-    padding-top: 80px;
+/* Banner ==================================== */
+
+.bannerNoBorder{
+    padding-top: 74px;
+}
+
+.bannerContainer{
+    position: relative;
+    background-color: white;
+}
+
+.bannerImg{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.textBottomRight{
+    position: absolute;
+    bottom: -10px;
+    right: 15px;
+    font-size: 20px;
+    font-family: 'Quando', serif;
+}
+
+.textBottomRightPlusPlus{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-size: 30px;
 }
 
 /* footer ==================================== */
