@@ -153,5 +153,15 @@ h4 {
 }
 
 
+/* Mise en forme section Panier */
 
-/* Fin ajustements medias Queries */
+.detailCart, .montantPanier{
+        -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 6px 7px 15px 0px rgba(255,128,172,0); 
+        box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 6px 7px 15px 0px rgba(255,128,172,0);
+        }
+
+        .montantPanier{
+            padding-left :2%;
+            padding-top:2%;
+            padding-bottom:2%;
+        }

@@ -3,7 +3,6 @@ supprimer les différents articles ligne par ligne
 ajouter bouton +/-
 sélectionner en général les items et non en passant par les ID
  */
-
 function LignePanier(code, qte, prix) {
     this.codeArticle = code;
     this.qteArticle = qte;
@@ -12,7 +11,7 @@ function LignePanier(code, qte, prix) {
         this.qteArticle += qte;
     }
     this.getPrixLigne = function () {
-        let resultat = this.prixArticle * this.qteArticle;
+        let resultat = this.prixArticle * this.qteArticle || this.qteArticle == "";
         return resultat;
     }
     this.getCode = function () {
@@ -76,9 +75,9 @@ function ajouter(btnIci) {
         let colonne4 = ligneTableau.insertCell(3);
         colonne4.innerHTML += ligne.getPrixLigne();
         let colonne5 = ligneTableau.insertCell(4);
-        colonne5.innerHTML += "<button class=\"btn btn-primary\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode.cells[0].innerHTML)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
+        colonne5.innerHTML += "<button class=\"btn btn-dark\" type=\"submit\" onclick=\"supprimer(this.parentNode.parentNode.cells[0].innerHTML)\"><span class=\"glyphicon glyphicon-remove\"></span> Retirer</button>";
     }
-    document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier();
+    document.getElementById("prixTotal").innerHTML = monPanier.getPrixPanier() + " €";
     document.getElementById("nbreLignes").innerHTML = longueur;
 
 }
