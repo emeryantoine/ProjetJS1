@@ -230,7 +230,7 @@ h4 {
 
 /* Mise en forme du testimonial */
 
-.card-text{
+.testimonial .card-text{
     height: 50px;
 }
 

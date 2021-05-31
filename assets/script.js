@@ -128,6 +128,7 @@ function ajouter(btnIci) {
     document.getElementById("nbreLignes").innerHTML = longueur;
 
     manageEvent();
+    return false;
 }
 
 // Supprimer une ligne complête

@@ -47,8 +47,8 @@
                             </a>
                         </li>
                         <li class="nav-item text-center">
-                            <a href="#air" class="nav-link">
-                                Air
+                            <a href="#nuage" class="nav-link">
+                                Nuage
                             </a>
                         </li>
                         <li class="nav-item text-center">
@@ -96,66 +96,65 @@
 
         <!-- DEBUT EXEMPLE -->
 
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-sm-9">
+        <div class="row">
+            <div class="col-md-3 mb-4">
                 <div class="card">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card card-1">
-                                <div class="pr-3 row justify-content-end">
-                                    <div class="fa fa-heart like like-checked"></div>
-                                </div>
-                                <div class="product-pic" id="test1-pict"> <img class="pic1"
-                                        src="https://i.imgur.com/EaNHGjT.png">
-                                </div> <small class="category">Shoes</small>
-                                <h5 class="name" id="test1-nameItem">shoes1</h5>
-
-                                <div class="row px-3 justify-content-between">
-                                    <p id="test1-price">45.99</p>
-                                    <div class="stars"> <span class="fa fa-star star-active"></span> <span
-                                            class="fa fa-star star-active"></span> <span
-                                            class="fa fa-star star-active"></span> <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit" onclick="ajouter(this)" id="test1">
-                                    <select class="form-control" id="test1-qte">
-                                        <option value=1>1</option>
-                                    </select>
-                                    <span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au
-                                    panier</button>
-                            </div>
+                    <img src="./assets/img/paper.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item1-paper-price" class="truePrice">19.99</span>€ </p>
                         </div>
-                        <!-- Article 2 -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card card-1">
-                                <div class="pr-3 row justify-content-end">
-                                    <div class="fa fa-heart like like-checked"></div>
-                                </div>
-                                <div class="product-pic" id="test2-pict"> <img class="pic1"
-                                        src="https://i.imgur.com/EaNHGjT.png">
-                                </div> <small class="category">Shoes</small>
-                                <h5 class="name" id="test2-nameItem">shoes2</h5>
-
-                                <div class="row px-3 justify-content-between">
-                                    <p id="test2-price">145.99</p>
-                                    <div class="stars"> <span class="fa fa-star star-active"></span> <span
-                                            class="fa fa-star star-active"></span> <span
-                                            class="fa fa-star star-active"></span> <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit" onclick="ajouter(this)" id="test2">
-                                    <select class=" form-control" id="test2-qte">
-                                        <option value=1>1</option>
-                                    </select>
-                                    <span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au
-                                    panier
-                                </button>
-                            </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span id="item1-paper-nameItem">paper-item1</span><span id="item1-paper-qte" hidden>1</span> </p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1-paper"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1-paper"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/paper.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item2-paper-price" class="truePrice">19.99</span>€ </p>
                         </div>
-
-                    </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item2-paper-nameItem">Paper-item2</span> <span id="item2-paper-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2-paper"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2-paper"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/paper.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item3-paper-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item3-paper-nameItem">Paper-item3</span> <span id="item3-paper-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3-paper"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3-paper"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="./assets/img/paper.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item4-paper-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item4-paper-nameItem">paper-item4</span><span id="item4-paper-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4-paper"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4-paper"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
         </div>
@@ -176,66 +175,62 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/wood.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item1-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span id="item1-nameItem">Golden-Random-Texte</span><span id="item1-qte" hidden>1</span> </p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/wood.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item2-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item2-nameItem">Golden-Random-Texte</span> <span id="item2-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/wood.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item3-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item3-nameItem">Golden-Random-Texte</span> <span id="item3-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/wood.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item4-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item4-nameItem">Golden-Random-Texte</span><span id="item4-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
         </div>
@@ -254,66 +249,62 @@
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/aluminium.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item1-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span id="item1-nameItem">Golden-Random-Texte</span><span id="item1-qte" hidden>1</span> </p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item1"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/aluminium.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item2-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item2-nameItem">Golden-Random-Texte</span> <span id="item2-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item2"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/aluminium.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item3-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item3-nameItem">Golden-Random-Texte</span> <span id="item3-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item3"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card">
+                    <img src="./assets/img/aluminium.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h4 class="card-title">
-                            Card title</h4>
-                        <p class="card-text">
-                            Some example text.
-                            Some example text.</p>
-
-                        <a href="#" class="card-link">
-                            Card link</a>
-                        <a href="#" class="card-link">
-                            Another link</a>
-                    </div>
+                        <h5 class="card-title">Golden shit</h5>
+                        <div class="stars card-subtitle">
+                            <span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span><span class="fa fa-star star-active"></span>
+                            <p > <span class="fakePrice">29.99€</span> <span id="item4-price" class="truePrice">19.99</span>€ </p>
+                        </div>
+                        <p class="card-text">Mini description pour tester mais quand meme un peu plus longue avec un peu de bordle raconté dedans pour voir la structure de la card en test :) <br> réference : <span class="item4-nameItem">Golden-Random-Texte</span><span id="item4-qte" hidden>1</span></p>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4"><span class="fas fa-cart-plus"></span>Ajouter au panier</a>
+                        <a class="btn btn-primary m-2 p-2" onclick="ajouter(this)" id="item4"><span class="far fa-credit-card"></span>Acheter maintenant!</a>
+                    </div>      
                 </div>
             </div>
         </div>
@@ -404,7 +395,7 @@
 
         <div class="hr-section">
             <hr>
-            <h2 class="text-center fw-bold" id="air"><span>Collection air</span></h2>
+            <h2 class="text-center fw-bold" id="Nuage"><span>Collection nuage</span></h2>
             <hr>
         </div>
         <div class="row">
@@ -476,7 +467,7 @@
 
         <div class="hr-plus">
             <hr>
-            <button type="button" class="btn showMore" id="+air">voir plus</button>
+            <button type="button" class="btn showMore" id="+nuage">voir plus</button>
             <hr>
         </div>
 
@@ -600,7 +591,7 @@
     <!-- testimonial -->
 
 
-    <section class="pt-5 pb-5">
+    <section class="pt-5 pb-5 testimonial">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -671,7 +662,7 @@
                                             <div class="card-body">
                                                 <h5 class="card-title">Trop
                                                     content de ma plaque
-                                                    gravée sur de l'air
+                                                    gravée sur un nuage
                                                     ! Original au
                                                     possible
                                                     !</h5>
@@ -825,7 +816,7 @@
                             <a href="#!" class="text-reset footer-item">Papier</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset footer-item">Air</a>
+                            <a href="#!" class="text-reset footer-item">Nuage</a>
                         </p>
                         <p>
                             <a href="#!" class="text-reset footer-item">Personnalisées</a>
