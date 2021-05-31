@@ -1,17 +1,17 @@
-function updateBannerPadding(){
+function updateBannerPadding() {
     // Get width and height of the window excluding scrollbars
     var w = document.documentElement.clientWidth;
-    
+
     // Display result inside a div element
-    if(w >= 415){
+    if (w >= 415) {
         document.getElementById("banner").style.padding = "74px 0px 0px 0px";
         return;
     }
-    if(w >= 359){
+    if (w >= 359) {
         document.getElementById("banner").style.padding = "114px 0px 0px 0px";
         return;
     }
-    if(w >= 355){
+    if (w >= 355) {
         document.getElementById("banner").style.padding = "134px 0px 0px 0px";
         return;
     } else {
@@ -20,19 +20,19 @@ function updateBannerPadding(){
     }
 }
 
-function updateBannertext(){
+function updateBannertext() {
     var w = document.documentElement.clientWidth;
 
-    if(w < 553){
+    if (w < 553) {
         document.getElementById("bannerCatchPhrase").style.display = "none";
         document.getElementById("bannerBrandName").style.bottom = "0px";
-    } else{
+    } else {
         document.getElementById("bannerCatchPhrase").style.display = "block";
         document.getElementById("bannerBrandName").style.bottom = "20px";
     }
     return
 }
-    
+
 // Attaching the event listener function to window's resize event
 window.addEventListener("resize", () => {
     updateBannerPadding();
@@ -173,17 +173,17 @@ function supprimer(code) {
 
 // Modifier la quantité d'articles dans le panier
 
-function manageEvent(){
+function manageEvent() {
     const events = document.querySelectorAll(".input-panier");
     events.forEach(function (inputupdate) {
-        inputupdate.addEventListener('change', function(){
+        inputupdate.addEventListener('change', function () {
             let qte = document.getElementById(this.id).value;
             let price = document.getElementById(String(this.id).replace("-inputId", "-itemPrice")).textContent;
 
             // document.getElementById(String(this.id).replace("-inputId", "-sousTT")).textContent = String(qte * price);
             let target = "#" + String(this.id).replace("-inputId", "-sousTT")
-            document.querySelector(target).textContent = String((qte*price * 100 ) / 100);
-            
+            document.querySelector(target).textContent = String((qte * price * 100) / 100);
+
 
             const ssTT = $("p[id*='sousTT']");
             let total = 0.;
@@ -195,3 +195,12 @@ function manageEvent(){
         })
     })
 }
+
+
+// Bouton retour en haut 
+
+document.addEventListener('DOMContentLoaded', function () {
+    window.onscroll = function (ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+    };
+});
