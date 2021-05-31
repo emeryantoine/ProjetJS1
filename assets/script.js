@@ -11,8 +11,8 @@ function LignePanier(code, qte, prix) {
         this.qteArticle += qte;
     }
     this.getPrixLigne = function () {
-        let resultat = this.prixArticle * this.qteArticle || this.qteArticle == "";
-        return resultat;
+        let resultat = (this.prixArticle * this.qteArticle) * 100;
+        return resultat / 100;
     }
     this.getCode = function () {
         return this.codeArticle;
@@ -68,8 +68,13 @@ function ajouter(btnIci) {
         let ligneTableau = tableau.insertRow(-1);
         let colonne1 = ligneTableau.insertCell(0);
         colonne1.innerHTML += ligne.getCode();
+
         let colonne2 = ligneTableau.insertCell(1);
         colonne2.innerHTML += ligne.qteArticle;
+        /*         colonne2.innerHTML += "<input class=\"btn btn-light\" type=\"number\" min=\"0\" min=\"10\" value=\"" + ligne.qteArticle + "\" ></input>";
+         */
+        // colonne2.innerHTML += "<input value=\"" + qte + "\"></input>";
+
         let colonne3 = ligneTableau.insertCell(2);
         colonne3.innerHTML += ligne.prixArticle;
         let colonne4 = ligneTableau.insertCell(3);
@@ -81,6 +86,8 @@ function ajouter(btnIci) {
     document.getElementById("nbreLignes").innerHTML = longueur;
 
 }
+
+
 
 // Supprimer une ligne complête
 
