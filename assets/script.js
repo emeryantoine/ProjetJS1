@@ -191,7 +191,6 @@ function manageEvent(){
                 total += parseFloat(ssTT[i].textContent) * 100;
             }
             document.getElementById("prixTotal").textContent = total / 100;
-
         })
     })
 }
