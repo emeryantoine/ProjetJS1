@@ -71,9 +71,6 @@ function ajouter(btnIci) {
 
         let colonne2 = ligneTableau.insertCell(1);
         colonne2.innerHTML += ligne.qteArticle;
-        /*         colonne2.innerHTML += "<input class=\"btn btn-light\" type=\"number\" min=\"0\" min=\"10\" value=\"" + ligne.qteArticle + "\" ></input>";
-         */
-        // colonne2.innerHTML += "<input value=\"" + qte + "\"></input>";
 
         let colonne3 = ligneTableau.insertCell(2);
         colonne3.innerHTML += ligne.prixArticle;
@@ -86,8 +83,6 @@ function ajouter(btnIci) {
     document.getElementById("nbreLignes").innerHTML = longueur;
 
 }
-
-
 
 // Supprimer une ligne complête
 
