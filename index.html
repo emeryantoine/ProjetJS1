@@ -595,7 +595,7 @@
 
         <div class="hr-plus">
             <hr>
-            <button type="button" class="btn createCustom" id="+custom">Créer mon AssKiPlate!</button>
+            <button type="button" class="btn createCustom" id="+custom" data-bs-toggle="modal" data-bs-target="#customWindow">Créer mon AssKiPlate!</button>
             <hr>
         </div>
     </div>
@@ -637,6 +637,40 @@
         </div>
     </div>
     </section>
+
+    <!-- Modal custom order -->
+    <div id="customWindow" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Créez votre propre AssKiPlate !!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="texture-select">Choississez votre texture :</label>
+                    <select name="texture" id="texture-select">
+                        <option value="./assets/img/missing_texture.png" style="display: none;">--- Texture ---</option>
+                        <option value="./assets/img/paper.png">Papier</option>
+                        <option value="./assets/img/wood.png">Bois</option>
+                        <option value="./assets/img/aluminium.png">Aluminium</option>
+                        <option value="./assets/img/gold.png">Or</option>
+                        <option value="./assets/img/cloud.png">Nuage</option>
+                    </select>
+                    <label for="text-selector">Choississez votre texte :</label>
+                    <input id="update-input" maxlength="15" placeholder="Insérez votre texte ici">
+                    <label for="previewCustom">Aperçcu de commande :</label>
+                    <div id="previewCustom" class="previewImg">
+                        <img id="customImg" src="./assets/img/missing_texture.png" width="400px" alt="">
+                        <p id="customText" class="centered">Votre Texte Ici!!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="fw-bold">Prix : <span id="customPrice">--.--</span>€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- testimonial -->
 

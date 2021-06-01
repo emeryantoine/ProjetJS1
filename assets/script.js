@@ -205,6 +205,47 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 });
 
+//fonction show more
+
 function showmore(myself) {
     document.getElementById(myself.id + "-div").removeAttribute("hidden");
+}
+
+//Faire une commande custom
+
+const customUpdate = document.getElementById('texture-select');
+const customUpdate2 = document.getElementById('update-input');
+
+customUpdate.addEventListener('change', customizer);
+customUpdate2.addEventListener('change', customizer);
+
+function customizer(){
+    let src = document.getElementById('texture-select').value;
+    let text = document.getElementById('update-input').value;
+    let price = 0.;
+
+    console.log(price)
+
+    if(src.includes('paper'))
+        price = 5;
+    if(src.includes('wood'))
+        price = 10;
+    if(src.includes('alu'))
+        price = 20;
+    if(src.includes('gold'))
+        price = 50;
+    if(src.includes('cloud'))
+        price = 200;
+    
+    if(price == 0)
+        price = "--.--";
+    else
+        price += text.length * 2 + .98;
+
+    if(text == "")
+        text = "Votre Texte ici!!";
+
+    document.getElementById('customImg').src = src;
+    document.getElementById('customText').textContent = text;
+    document.getElementById('customPrice').innerHTML = (price * 100) / 100;
 }
