@@ -206,6 +206,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function showmore(myself) {
-    console.log(myself.id + "-div");
-    document.getElementById(myself.id + "-div").removeattribute("hidden");
+    document.getElementById(myself.id + "-div").removeAttribute("hidden");
 }
