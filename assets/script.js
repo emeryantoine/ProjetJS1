@@ -204,3 +204,8 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
     };
 });
+
+function showmore(myself) {
+    console.log(myself.id + "-div");
+    document.getElementById(myself.id + "-div").removeattribute("hidden");
+}
