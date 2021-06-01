@@ -222,7 +222,7 @@ customUpdate2.addEventListener('change', customizer);
 function customizer(){
     let src = document.getElementById('texture-select').value;
     let text = document.getElementById('update-input').value;
-    let price = 0.;
+    let price = "0";
 
     console.log(price)
 
@@ -237,15 +237,16 @@ function customizer(){
     if(src.includes('cloud'))
         price = 200;
     
-    if(price == 0)
-        price = "--.--";
-    else
-        price += text.length * 2 + .98;
+    if(price == "0"){
+        document.getElementById('customPrice').innerHTML = "--.--";
+    }
+    else{
+        document.getElementById('customPrice').innerHTML = ((price + (price*text.length* 2) + .98) * 100) / 100;
+    }
 
     if(text == "")
         text = "Votre Texte ici!!";
 
     document.getElementById('customImg').src = src;
     document.getElementById('customText').textContent = text;
-    document.getElementById('customPrice').innerHTML = (price * 100) / 100;
 }
