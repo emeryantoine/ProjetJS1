@@ -92,7 +92,7 @@ h2 span{
     cursor: pointer;
 }
 
-.card a{
+.card a, .modal-footer a{
     background: linear-gradient(90deg, rgba(255,128,172,1) 0%, rgba(255,0,88,1) 100%);
     border: none;
 }
@@ -109,7 +109,8 @@ h2 span{
 /* CUSTOMIZER =================================================================*/
 
 .modal-body label, .modal-body input{
-    display:block;clear:both;
+    display:block;
+    clear:both; 
 }
 
 .previewImg{
@@ -335,4 +336,8 @@ h4 {
           a#cRetour.cVisible{
             bottom:20px;
             opacity:1;
+          }
+
+          .modal-dialog{
+              max-width: 50%;
           }
